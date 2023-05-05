@@ -36,3 +36,15 @@ subprojects {
 
     compileJava.dependsOn tasks.googleJavaFormat
 }
+
+project(':app') {
+    dependencies {
+        compile project(':common')
+    }
+}
+
+project(':base') {
+    dependencies {
+        compile project(':common')
+    }
+}
